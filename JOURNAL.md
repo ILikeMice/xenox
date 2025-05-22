@@ -13,7 +13,7 @@ Got approval from alex yesterday and wrote down the BOM inso a csv today, also s
 
 ### Sketch:
 
-![First sketch](https://github.com/ILikeMice/xenox/blob/e0757a4e3423288a23b0ce5a9f9a7cb6c1520474/photos/22-05-1.jpeg?raw=true)
+![First sketch](https://github.com/ILikeMice/xenox/blob/main/photos/22-05-1.jpeg?raw=true)
 
 **Session Time Spent: ~1h30mins**
 
@@ -23,6 +23,6 @@ Spent a bunch of time in fusion trying to figure out little details but ended up
 
 Also got info on what fuse i need for the psu iec socket (confusing but shoutout @Volkov08 for helping)
 
-![First Design]([22-05-2.png](https://github.com/ILikeMice/xenox/blob/e0757a4e3423288a23b0ce5a9f9a7cb6c1520474/photos/22-05-2.png?raw=true))
+![First Design](https://github.com/ILikeMice/xenox/blob/main/photos/22-05-2.png?raw=true)
 
 **Session Time Spent: 2h**
