@@ -26,3 +26,11 @@ Also got info on what fuse i need for the psu iec socket (confusing but shoutout
 ![First Design](https://github.com/ILikeMice/xenox/blob/main/photos/22-05-2.png?raw=true)
 
 **Session Time Spent: 2h**
+
+# May 23rd: Getting first Electronics stuff down
+
+So, today I wanted to review my stuff with steppers and so on and realized i might not have enough GPIO pins for all 6 stepper drivers + fan, lights,microphone, speaker, etc., after going on a journey looking up all the stuff i could do i decided to go for a PCF8575 i2c expansion module to control the steppers, turns out i2c is really cool for this. Found it and some basic components ill be needing on aliexpress, and pained myself with installing fritzing thrice with a bunch of problems for about an hour, got a pretty decent schematic down (not without going though a questionable amount of datasheets and manuals) though, attached below:
+
+![First Schematic](https://github.com/ILikeMice/xenox/blob/main/photos/23-05-2.png?raw=true)
+
+**Session Time Spent: 3.5h**
