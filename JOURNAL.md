@@ -73,3 +73,28 @@ Also, this might get pretty warm so im thinking of adding a fan for cooling all 
 ![PCB](https://github.com/ILikeMice/xenox/blob/main/photos/24-05-5.png?raw=true)
 
 **Session Time Spent: 4h**
+
+
+# May 25th
+
+## Joints 1 & 2!
+
+Made a bunch of cad progress today! First, I made a round shape thing for the 1st joint that would also hold the second joint in the middle: 
+![Joints v1](https://github.com/ILikeMice/xenox/blob/main/photos/25-05-1.png?raw=true)
+
+This turned out to be really impractical though because id need to magically insert a rod through the 2nd joint's arm part and then somehow also fit the servo next to it, so i decided to scrap that design and make a flat spinning base with a couple holders for the 2nd joint: 
+
+![Finished-ish thing cross-section](https://github.com/ILikeMice/xenox/blob/main/photos/25-05-2.png?raw=true)
+
+for this ill need some gears, a rod and bearings (i already have the bearings at home), which added up to ~10-15$. I think its worth it tho since its 5 pcs of each so ill be able to reuse that for future joints. I also added some heat inserts for attaching the servos and future stuff with screws instead of glue, and some cable sleeving for the cables. I should really update my BOM soon
+
+Speaking of cables, my next step might be making holes for the cables to pass through, i think itll be quite a challenge tho since i cant really fit a slip ring into the first joint, so ill have to account for spinning for the first 2 servos, I think ill try to add a slip ring at the next joint though.
+
+Also, thinking about joint 3, I might remodel joint 2 to just use 2 bearings without a rod for that so i can fit a stepper directly in the center of it without the rod interfering (totally not copied from a guy i found online :3)
+
+Design today:
+
+![Design 25-05](https://github.com/ILikeMice/xenox/blob/main/photos/25-05-1´3.png?raw=true)
+
+
+**Session Time Spent: ~6h**
