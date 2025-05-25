@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~15.5h
+# Total Time Spent: ~21.5h
 
 # May 22nd
 
