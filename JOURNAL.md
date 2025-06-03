@@ -94,7 +94,7 @@ Also, thinking about joint 3, I might remodel joint 2 to just use 2 bearings wit
 
 Design today:
 
-![Design 25-05](https://github.com/ILikeMice/xenox/blob/main/photos/25-05-1´3.png?raw=true)
+![Design 25-05](https://github.com/ILikeMice/xenox/blob/main/photos/25-05-3.png?raw=true)
 
 
 **Session Time Spent: ~6h**
