@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~21.5h
+# Total Time Spent: ~32h
 
 # May 22nd
 
@@ -98,3 +98,26 @@ Design today:
 
 
 **Session Time Spent: ~6h**
+
+
+# June 3rd
+
+## A bit of redesign and joint 3!
+
+I havent posted in a couple of days, so ill summarize the progress as one session here. 
+
+First of all, i changed the overall look of the "first" arm part, mainly so that joint 3 is a circle and can freely rotated instead of bein rectangular-ish and me having to put a stepper at the top. I also removed the need for a rod in the middle and made the whole thing be held in place by 2 bearings on each side. I then made a little hole and sliced the thing in two so i could add the 3rd stepper right inside of the arm. I think this should remove the need for screws there, but i might try adding slots for heat inserts somehow.
+
+I also moved the whole gear thing to the outside of the 2 holders that hold the arm and made a decent holder for the stepper that ill also hold with some screws (should hopefully be able to hold, i gotta do that for the arm holders too). Speaking of the gear thing, ill most likely 3d print the bigger gear, which allows enough budget to maybe get a finer nozzle for better precision on that, since afaik 3d printed gears need some more precision to work decently (it should also save me some budget when i need more gears in the future), and with it being 3d printed ill be able to fit some heat inserts in there to attach it to the arm piece directly without a rod 
+
+Some pictures:
+
+![Cross-section](https://github.com/ILikeMice/xenox/blob/main/photos/03-06-1.png?raw=true)
+
+![Overall design](https://github.com/ILikeMice/xenox/blob/main/photos/03-06-2.png?raw=true)
+
+I also made a rod with some slots for heat inserts for the 3rd joint which ill somehow attach to the next joint later on, plus i started making the heat insert radius use a variable so i wont have to change all of the holes if i ever change my mind on something
+
+
+
+**Total time spent across sessions: ~10.5h?** 
