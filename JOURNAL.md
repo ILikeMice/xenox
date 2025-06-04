@@ -121,3 +121,9 @@ I also made a rod with some slots for heat inserts for the 3rd joint which ill s
 
 
 **Total time spent across sessions: ~10.5h?** 
+
+## BOM update!!
+
+Finally got to updating the BOM, i think that should be pretty much all for now, added some cables, heat inserts, flange couplings, etc. check ./BOM.csv or ./README.md for more details!
+
+**Total session time spent: ~30mins**
