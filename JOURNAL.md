@@ -143,7 +143,7 @@ As you can see, the U axis is supposed to move the arm down, whereas i made it r
 
 ![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/12-06-1.png?raw=true)
 
-I put the stepper into the end of the joint, but doing a bit of research, the steppers im using right now will probably not serve close to enough torque, so i will probably redesign this to use gears.
+I put the stepper into the end of the joint, but doing a bunch of research (also considered high torque servos but meh, might look into them more though), the steppers im using right now will probably not serve close to enough torque, so i will probably redesign this to use gears.
 
 Speaking of not enough torque, i decided to go with a stronger motor for joint 2 since it has to carry whe whole arm. I also upped the gear ratio from 3:1 to 5:1 and changed the mount. I found another stepper motor after designing this which isnt aliexpress choice so i gotta pay for shipping, it does however give me 40Ncm torque instead of 25Ncm on the choice stepper, so i might change this too.
 
@@ -158,3 +158,4 @@ Current Joint 2 mount:
 
 ![mount](https://github.com/ILikeMice/xenox/blob/main/photos/12-06-2.png?raw=true)
 
+**Total time spent: ~ 5h**
