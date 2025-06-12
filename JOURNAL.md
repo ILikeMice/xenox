@@ -127,3 +127,34 @@ I also made a rod with some slots for heat inserts for the 3rd joint which ill s
 Finally got to updating the BOM, i think that should be pretty much all for now, added some cables, heat inserts, flange couplings, etc. check ./BOM.csv or ./README.md for more details!
 
 **Total session time spent: ~30mins**
+
+# June 12th
+
+
+## Redesign of joint 3 and 2
+
+I realized that im kinda dumb and accidentially made joint 3 fully wrong (view photo below)
+
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/12-06-3.png?raw=true)
+
+As you can see, the U axis is supposed to move the arm down, whereas i made it rotate the arm. I dont really want it that way so i redesigned the joint.
+
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/12-06-1.png?raw=true)
+
+I put the stepper into the end of the joint, but doing a bit of research, the steppers im using right now will probably not serve close to enough torque, so i will probably redesign this to use gears.
+
+Speaking of not enough torque, i decided to go with a stronger motor for joint 2 since it has to carry whe whole arm. I also upped the gear ratio from 3:1 to 5:1 and changed the mount. I found another stepper motor after designing this which isnt aliexpress choice so i gotta pay for shipping, it does however give me 40Ncm torque instead of 25Ncm on the choice stepper, so i might change this too.
+
+Assuming i use the 25Ncm stepper, ill get 125N of force at joint 2, which gives me about 4N torque @ 30cm and 2N @ 60cm.
+With the 40Ncm stepper ill get 6N @ 30cm and 3N @ 60cm.
+
+I should look into nema23 steppers.
+
+Also, after looking at my torque amounts, i might cut the max range of the arm to 60cm instead of 1m.
+
+Current Joint 2 mount: 
+
+![mount](https://github.com/ILikeMice/xenox/blob/main/photos/12-06-2.png?raw=true)
+
