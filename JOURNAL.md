@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~37h
+# Total Time Spent: ~40.5h
 
 # May 22nd
 
@@ -159,3 +159,21 @@ Current Joint 2 mount:
 ![mount](https://github.com/ILikeMice/xenox/blob/main/photos/12-06-2.png?raw=true)
 
 **Total time spent: ~ 5h**
+
+
+# June 13th
+
+## Work on Joint 3!
+
+So, i did a bunch of research on aliexpress and watched a ton of youtubers making hobbyist arms, and decided to keep a stronger motor for joint 2 only, since thats carrying the whole weight of the arm. I didnt want to use multiple since i got some limited amount of space in the base of the arm and my current small drivers cant handle the current needed for stronger motors.
+
+Inspired by Steward Technologies on youtube, i decided to use the ton of space i had inside the arm to make a gear setup for joint 3.
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/13-06-2.png?raw=true)
+
+This turns the 13Ncm torque from the small stepper into 208Ncm with a total gear ratio of 16:1. I still have to redesign the joint itself at the top to have a gear in the middle with 2 holders on the outside (opposite of the current setup)
+
+I also found out from another youtuber that im absolutely stupid and my custom pcb is totally useless since i can get RAMPS 1.4 board for a fraction of the price on aliexpress. Its got everything except i2c, but i dont mind a bit of cabling between the board and the i2c module.
+
+
+**Session time spent: ~3.5h** (didnt track on this session, guesstimated)
