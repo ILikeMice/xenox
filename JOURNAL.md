@@ -169,7 +169,7 @@ So, i did a bunch of research on aliexpress and watched a ton of youtubers makin
 
 Inspired by Steward Technologies on youtube, i decided to use the ton of space i had inside the arm to make a gear setup for joint 3.
 
-![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/13-06-2.png?raw=true)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/13-06-1.png?raw=true)
 
 This turns the 13Ncm torque from the small stepper into 208Ncm with a total gear ratio of 16:1. I still have to redesign the joint itself at the top to have a gear in the middle with 2 holders on the outside (opposite of the current setup)
 
@@ -177,3 +177,26 @@ I also found out from another youtuber that im absolutely stupid and my custom p
 
 
 **Session time spent: ~3.5h** (didnt track on this session, guesstimated)
+
+
+## July 3rd
+
+Had some time to work on the project in the last weeks, didnt write journal logs though since i was adding 1 mini feature per session but that kinda built up over some time.
+
+Current build:
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+So, i started and kinda made joint 4 after quite a couple redesigns, the gear being in the middle was pretty annoying since id have to kinda print it in multiple parts and the cylinder of the arm would probably be weirdly attached to the whole structure. In the end i decided to move it to the side, but in exchange i had to make the last gear a bit long (actually writing this i realize i could be 2/3 as long idk why i did all that).
+
+I also designed the cover of joint 3 to be attachable with a couple screws (4 screws to assemble it, 8 to attach to the big cylinder (on which i still gotta see how i wanna assemble it))
+
+Also dug around quite a bit in search of better steppers, couldnt find anything better than what i currently have though.
+
+Plans for the last 2 joints (the "hand part") are to probably use some lightweight steppers since it doesnt need that much torque to hold stuff and using steppers would make it real hard on joints 2 and 3. Also, depending on the steppers ill probably be able to get away with a 15A PSU which would actually fit inside the housing for the arm as planned.
+
+I additionally gotta get inspired by something to get a decent gripper down and find a place to install the microphone and speaker.
+
+
+**Total Time Spent over Sessions: around 12h**
