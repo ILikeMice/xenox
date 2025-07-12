@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~40.5h
+# Total Time Spent: ~58.5h
 
 # May 22nd
 
@@ -200,3 +200,29 @@ I additionally gotta get inspired by something to get a decent gripper down and 
 
 
 **Total Time Spent over Sessions: around 12h**
+
+
+## July 11th
+
+Made progress on joint 5 and started working on the gripper, thinking of how to make the hand part modular (will be one of the last things after the gripper)
+
+### Joint 5
+
+![alt text](image-2.png)
+
+Thought a design like this would look the best overall, the only downside of it being the possibility of the joint breaking off. I still need to see how id fix that :/, Joint 4 is fully finished though, with an added bearing for stability of the rod.
+
+To rotate Joint 5 I decided on a MG90S servo, its got metal gears, a 270deg range and pretty decent torque. I will also be using one for joint 6, but for the gripper ill use a continuous rotation servo i got laying around.
+
+Speaking of the gripper:
+
+![alt text](image-3.png)
+
+this is the coolest mechanism i found (also basically the only one with 3 fingers which could also possibly fit the camera in the middle), however, the cad files for it arent available so i had to make a couple prototypes to get to this design:
+
+![alt text](image-4.png)
+
+
+its just an outline of the gripper to see how the mechanism would perform when printed, which wasnt with much success sadly. Main problems are the gears changing a bit due to their size and my .4mm nozzle (even after i changed the outer gears to this "inverted" type), which shouldnt be a problem with a .2 nozzle though, and the outer gears not touching the middle worm gear. To fix that though, i plan on adding a couple springs and make the gear holders rotateable, so the gears are always pushed against the middle gear. Printing the worm gear is also pretty hard, ill look into buying one.
+
+**Session time spent: ~6h**
