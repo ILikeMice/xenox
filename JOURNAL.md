@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~58.5h
+# Total Time Spent: ~75h
 
 # May 22nd
 
@@ -128,10 +128,10 @@ Finally got to updating the BOM, i think that should be pretty much all for now,
 
 **Total session time spent: ~30mins**
 
-# June 12th
+## June 12th
 
 
-## Redesign of joint 3 and 2
+### Redesign of joint 3 and 2
 
 I realized that im kinda dumb and accidentially made joint 3 fully wrong (view photo below)
 
@@ -161,9 +161,9 @@ Current Joint 2 mount:
 **Total time spent: ~ 5h**
 
 
-# June 13th
+## June 13th
 
-## Work on Joint 3!
+### Work on Joint 3!
 
 So, i did a bunch of research on aliexpress and watched a ton of youtubers making hobbyist arms, and decided to keep a stronger motor for joint 2 only, since thats carrying the whole weight of the arm. I didnt want to use multiple since i got some limited amount of space in the base of the arm and my current small drivers cant handle the current needed for stronger motors.
 
@@ -185,8 +185,8 @@ Had some time to work on the project in the last weeks, didnt write journal logs
 
 Current build:
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/03-07-1.png?raw=true)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/03-07-2.png?raw=true)
 
 So, i started and kinda made joint 4 after quite a couple redesigns, the gear being in the middle was pretty annoying since id have to kinda print it in multiple parts and the cylinder of the arm would probably be weirdly attached to the whole structure. In the end i decided to move it to the side, but in exchange i had to make the last gear a bit long (actually writing this i realize i could be 2/3 as long idk why i did all that).
 
@@ -208,7 +208,7 @@ Made progress on joint 5 and started working on the gripper, thinking of how to 
 
 ### Joint 5
 
-![alt text](image-2.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/11-07-1.png?raw=true)
 
 Thought a design like this would look the best overall, the only downside of it being the possibility of the joint breaking off. I still need to see how id fix that :/, Joint 4 is fully finished though, with an added bearing for stability of the rod.
 
@@ -216,13 +216,157 @@ To rotate Joint 5 I decided on a MG90S servo, its got metal gears, a 270deg rang
 
 Speaking of the gripper:
 
-![alt text](image-3.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/11-07-2.png?raw=true)
 
 this is the coolest mechanism i found (also basically the only one with 3 fingers which could also possibly fit the camera in the middle), however, the cad files for it arent available so i had to make a couple prototypes to get to this design:
 
-![alt text](image-4.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/11-07-3.png?raw=true)
 
 
 its just an outline of the gripper to see how the mechanism would perform when printed, which wasnt with much success sadly. Main problems are the gears changing a bit due to their size and my .4mm nozzle (even after i changed the outer gears to this "inverted" type), which shouldnt be a problem with a .2 nozzle though, and the outer gears not touching the middle worm gear. To fix that though, i plan on adding a couple springs and make the gear holders rotateable, so the gears are always pushed against the middle gear. Printing the worm gear is also pretty hard, ill look into buying one.
 
-**Session time spent: ~6h**
+**Session time spent: ~4h**
+
+
+## July 16th
+
+### Finishing the gripper
+
+Over the past couple days i tried around more with printing gears, etc. with bigger module gears i finally got to this design:
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/16-07-1.png?raw=true)
+
+with bigger gears with holes for bearings, a camera mount and fingers with moving fingertips this should be pretty close to my final claw design. This took a couple days of progress but im pretty happy with the final design, only thing i do need to fix are the  "legs" for the camera holder, one of them is right above the servo and should probably be either shorter or positioned somewhere else, ill figure that out tomorrow.
+
+**Total time spent: ~5h**
+
+## July 17th
+
+### Final touches on the gripper and audio modules
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/17-07-1.png?raw=true)
+
+Added little "ears" for the camera stand legs since the distance between them and the fingers was like .2mm and i did not wanna risk the legs getting pushed out each time i open the hand.
+
+Also, you can see i replaced the "pins" holding the gripper part together with M2.5 screwholes, for convenience when disassembling/assembling. Overall, this should be it for the gripper! once again, pretty happy with it, only problem is the modularity of the gripper part, its not as easy as i wanted to switch it out (gotta disassemble the whole gripper to get to the servo), might wanna see if i can redesign it sometime to be fully modular with less hassle.
+
+PS: didnt realize i forgot to document the "pins": i made  the bottom part of the grippers cylinder seperate from the upper part to allow inserting a servo for opening/closing the gripper. I connected the 2 parts with little pins/pills and was planning on just gluing them together
+
+Also made slots for the speaker and microphone:
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/17-07-2.png?raw=true)
+
+and for the amplifier: 
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/17-07-3.png?raw=true)
+
+
+Additionally, i added some scew holes to connect the "forearm" part to the 4th joints cylinder since i probably couldnt print the 2 parts in one part (even if i could, that would probably be too weak to hold the whole gripper, etc.)
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/17-07-4.png?raw=true)
+
+**Total time spent: ~1.5h**
+
+## July 20th
+
+### Mounting the gripper
+
+
+After pondering for a loong while i finally came to this: 
+![wrist](https://github.com/ILikeMice/xenox/blob/main/photos/20-07-1.png?raw=true)
+
+My main problem here was the relatively small space for the 2 motors that needed to be around that general area.
+
+In the end, i put the gripper servo inside the wrist and the wrist servo outside, but then i encountered another problem: to attach the wrist to the servo i needed a full cylinder of space for the screwdriver right infront of it, which would be blocked by the gripper servo. I then realized that i can just install the gripper after the wrist servo, so i didnt need that space there the entire time. The same cylinder can then be also used as a guide outside for the gripper servos cables (theyre at the right side of the wrist, furthest from the opening) 
+
+
+I also didnt realize for a while that i can insert the wrist servo from the wrists side like so: 
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/20-07-2.png?raw=true)
+
+and mounting it from the other side resulted in not enough space for the screw to hold the servo in place, so i was stuck on that for a while aswell.
+
+Overall, my only concern here is that the wrist might potentially not hold well enough on  the servo alone, but even if it bends the bit smaller clearance between the two parts should kinda hold it and the fact that its a metal gear servo should also add some strength.
+
+I also designed the inner part of the gripper to house one servo and be attachable to another servo:
+
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/20-07-3.png?raw=true)
+
+
+**Total time spent ~3.5h**
+
+
+## July 21st
+
+### Stepper driver and electronics hatch
+
+
+Since im using a stronger stepper for the second joint, i cant use a TMC2209 driver as that can only handle up to 2 amps of current. My initial plan was to somehow fit this stronger driver inside the base, but sadly the ring holding the thrust bearing kinda obstructs accessibility to it and theres no way of adding that without needing supports, which im trying to avoid. Best option i could think of was mounting it outside the base, in a way i could easily access the wires if needed. 
+
+Also changed the driver to a TB6600 since the previous one cost a bit more and was a bit bigger, and i wanted to use minimal space here.
+
+Final design:
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/21-07-1.png?raw=true)
+
+Most of the holder part is printed seperately, and secured to the base with 8 cylinders. Also has a little cover that slides into place since i do not wanna have the wires exposed
+
+Without the cover: 
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/21-07-2.png?raw=true)
+
+Second, I wanted to make the PSU and all other electronics be able to slide out of the base for simpler maintenance, etc. I dont have much space anywhere around the PSU, and i thought i needed at least 2cm space behind the rails to mount them with screws, so i first tried expanding the room for the PSU and such by about 1cm to the left and right, but thats about as much as i could go, and sadly the rail needs 1cm space plus some more to actually hold something.
+
+For reference:
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/21-07-3.png?raw=true)
+
+I also believed mounting it at the bottom of the base would be impossible as ive only got about a centimeter of space extra, but upon closer inspection i found a bunch of holes on the backside of the rail:
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/21-07-4.png?raw=true)
+
+with this, i could probably add some cylinders which should hopefull have enough strength together to hold the whole thing.
+
+Actually, now that i think about it further im pretty sure the rail could just fall out when fully opened as the cylinders dont really hold it down. Ill need M4 screws to attach the platform on which the psu lays either way so im gonna add some 5mm M4 screws and m4 bolts and try to secure the rail with a couple of those.
+
+Sadly though, there arent any measurements of the holes on the page, so i cant really add much until i measure the parts myself.
+
+My current design looks something like this:
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/21-07-5.png?raw=true)
+
+Some slots for the rails, a little block at the end to prevent the psu from just sliding off when opening it too fast, and i got some extra space at the front for some m4 screws (distance between the top surface and the rail is about 5mm, should be fine if i add some indents)
+
+For the handle, i first wanted to make it printable seperately, but i like this design so i think ill stick with that for now.
+
+
+**Total Time spent: ~5h**
+
+
+## July 22nd
+
+### A bit of polishing and review
+
+Went over the whole design today, and checked out if i missed tolerances, etc.
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/22-07-1.png?raw=true)
+
+
+main changes are the addition of screws to hold the main cylinder together and an improved holder at joint 3 that prevents the 7mm bearing from moving inside the 1.5cm wall.
+
+The cylinder has 3 M3 screwholes on each side, 6 total. Also saw that the 3rd joint wasnt aligned properly and that i was missing tolerances on almost all the bearings (including those that hold the rods for the 3rd joint gears)
+
+Also expanded the holes here for better fitting of the screws, which would interfere with the big cylinder otherwise.
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/22-07-2.png?raw=true)
+
+Reviewed the electronics aswell, as i was thinking of installing limit switches for homing/calibration and found out that the RAMPS board isnt really meant to be used with something else than an arduino mega, so i decided to discard that. Only alternative i found was using a 3d printer control board, which i found for about 14$ on aliexpress (had to move some of the items ill order to bundle deals since it was only available there).
+
+Board is the Fly-D5 board and can run klipper (gotta look into the usage of that aswell), should be more than enough for driving 3 of my steppers.
+
+For the servos, ill use a PCA9685 servo driver that ill be able to control with i2c. im unsure whether i can rely on the orange pis pwm for the servos, and having a driver makes it easier to also use a 12 to 5v converter, seperate from the one powering the pi.
+
+I also decided to use a TCA9548A i2c expansion board for the adc(to read the grippers pressure sensors), servo driver and audio system.
+
+**Total time spent: ~3.5h**
