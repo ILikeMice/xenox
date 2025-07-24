@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~75h
+# Total Time Spent: ~77.5h
 
 # May 22nd
 
@@ -370,3 +370,36 @@ For the servos, ill use a PCA9685 servo driver that ill be able to control with 
 I also decided to use a TCA9548A i2c expansion board for the adc(to read the grippers pressure sensors), servo driver and audio system.
 
 **Total time spent: ~3.5h**
+
+
+## July 24th
+
+### Wiring!
+
+Did some more research on electronics overall and fully made the wiring plan in fritzing! (Note: some stuff might be missing since i cant add them to fritzing/the model doesnt exist for fritzing)
+
+![alt text](image.png)
+
+This should be about everything for the electronics, excluding the other stepper control board, which ill connect via usb (and also couldnt find as a fritzing model)
+
+While wiring, i also found out the Orange pi Zero 3 doesnt have i2s/i2s is hard to setup and there arent any microphones or speakers using something else, so i decided to discard the audio system (saves some budget aswell) and just use bluetooth headphones i already have for audio input/output.
+
+The Stepper driver in the photo isnt the one im using since i also couldnt find the TB6600 for fritzing, but its similar enough and should do for the diagram.
+
+For the pressure sensors, i used a breadboard here, but ill use a prototype board when building, as i dont think breadboard connections would hold that well (ill also add cables for them of course, i decided on shielded ones since i dont want noise from the steppers, etc. disrupting the measurements (adds like 2$))
+
+**Time spent: ~2.5h**
+
+
+### Screws!
+
+Read in #highway-pitstop that submissions need files of all the electronics, presumed that that included screws, etc. so i added most of the stuff i need (still missing some stuff), mainly screws.
+
+Tried to use the built in insert fastener feature which didnt work and made me fiddle around with fusion for about an hour and a half at least (not gonna add that to the time here), ended up just importing the files seperately and copy/pasting them to their locations. At the part where the main cylinder attaches to the joint 3 gearbox cover, i couldnt get 4 of the screws perfectly aligned, but since its mainly for show, i think it should be fine.
+
+
+Also went though all the bodies and seperated all the ones that were sketches/unused into a trash folder, for better overview of the project.
+
+Thats about all for today, gonna import the steppers tomorrow hopefully and add some more stuff!
+
+![alt text](image-1.png)
