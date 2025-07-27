@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~77.5h
+# Total Time Spent: ~85.75h
 
 # May 22nd
 
@@ -186,7 +186,7 @@ Had some time to work on the project in the last weeks, didnt write journal logs
 Current build:
 
 ![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/03-07-1.png?raw=true)
-![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/03-07-2.png?raw=true)
+![alt text](https://github.com/ILikeMice/xenox/blobmain/photos/03-07-2.png?raw=true)
 
 So, i started and kinda made joint 4 after quite a couple redesigns, the gear being in the middle was pretty annoying since id have to kinda print it in multiple parts and the cylinder of the arm would probably be weirdly attached to the whole structure. In the end i decided to move it to the side, but in exchange i had to make the last gear a bit long (actually writing this i realize i could be 2/3 as long idk why i did all that).
 
@@ -403,3 +403,63 @@ Also went though all the bodies and seperated all the ones that were sketches/un
 Thats about all for today, gonna import the steppers tomorrow hopefully and add some more stuff!
 
 ![alt text](image-1.png)
+
+**Time spent: ~1h**
+
+## July 26th
+
+### Final additions (probably not final)
+
+Went over some stuff again and realized that steppers have screws on the backside to hold them together and on the front side to be attached, researched about the estimated screw length for attachment but couldnt find anything, went with about 6mm. I cant use 35mm screws for the 48mm stepper since there probably wont be enough space and the screw wont go competely through it (thereby not also doing the function of the back screw and holding it together), but i presume i can for the smaller steppers that are about 23mm in size.
+
+Ended up adding a bracket for the bigger stepper and made openings in the base cover for wires, also removed 2 of the support "lines" for the 1st stepper holder, but made the other two thicker, so i had the approximate same strength but a bigger area for wires to move in (with 4 lines holding the stepper in the middle the arm coulve rotated about 90 degrees before sketchy wire stuff happening, with 2 its 180deg).
+
+![alt text](image-2.png)
+
+
+**Time spent: ~2h**
+
+
+## July 27th
+
+### Preparations for shipping!
+
+So, today i wanted to kinda finalize my project so i could optimally ship it tomorrow (after i get an outline on the software done hopefully).
+
+I Added all motors and servos, bearings, and found a dummy model for the camera. I also decided to color in the project (turns out im shit at colouring, but eventually managed to get somewhere) as id probably not print it all in one color anyway and uncoloured looked overall bland and not really shippable. I also rendered it a couple times, rly love my result so far!
+
+![alt text](image-3.png)
+
+(beautiful render)
+
+I Also added holes everywhere they needed to be for wires of the motors, and inserted all electronics i could (not adding the pressure sensors etc. bc theyre pretty hard to add imo)
+
+Pic below shows the wire holes at the backside of the arm and the electronics (just the fly d5 and the orange pi here, i could maybe add the bigger stepper driver? but more than that would probably be overkill)
+
+![alt text](image-4.png)
+
+One big thing youll also notice is that i changed the PSU sliding holders appearance, as i heavily underestimated the size of the outlet, and had to get rid of the super cool inset handle i had :/
+
+![alt text](image-5.png)
+
+I started work on a insertable handle (maybe one handle on both sides so i can kinda slide it out with both hands and that would possibly look cool), but i think ill finish it tomorrow.
+
+Bearings inserted into the model at joints 2 and 3:
+
+![alt text](image-6.png)
+
+i also fixed some small errors like the joint 3 hole not being big enough for the inner ring of the bearings and the gripper not being aligned with joint 3s rotation, which would probably make the whole thing a bit harder to control overall.
+
+(Plus i named all the bodies so theres some sort of sense of order when opening the model)
+
+
+**Time spent: ~5h**
+
+### New Grips!
+
+![](/image-7.png)
+
+
+Designed new handles, they should just slide in from the top and after that not slide out (i could just glue them), overall decently happy enough with the looks of it.
+
+**Time spent: ~15mins**
