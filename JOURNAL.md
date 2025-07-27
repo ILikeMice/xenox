@@ -378,7 +378,7 @@ I also decided to use a TCA9548A i2c expansion board for the adc(to read the gri
 
 Did some more research on electronics overall and fully made the wiring plan in fritzing! (Note: some stuff might be missing since i cant add them to fritzing/the model doesnt exist for fritzing)
 
-![alt text](image.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/24-07-1.png?raw=true)
 
 This should be about everything for the electronics, excluding the other stepper control board, which ill connect via usb (and also couldnt find as a fritzing model)
 
@@ -402,7 +402,7 @@ Also went though all the bodies and seperated all the ones that were sketches/un
 
 Thats about all for today, gonna import the steppers tomorrow hopefully and add some more stuff!
 
-![alt text](image-1.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/24-07-2.png?raw=true)
 
 **Time spent: ~1h**
 
@@ -414,7 +414,7 @@ Went over some stuff again and realized that steppers have screws on the backsid
 
 Ended up adding a bracket for the bigger stepper and made openings in the base cover for wires, also removed 2 of the support "lines" for the 1st stepper holder, but made the other two thicker, so i had the approximate same strength but a bigger area for wires to move in (with 4 lines holding the stepper in the middle the arm coulve rotated about 90 degrees before sketchy wire stuff happening, with 2 its 180deg).
 
-![alt text](image-2.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/26-07-1.png?raw=true)
 
 
 **Time spent: ~2h**
@@ -428,7 +428,7 @@ So, today i wanted to kinda finalize my project so i could optimally ship it tom
 
 I Added all motors and servos, bearings, and found a dummy model for the camera. I also decided to color in the project (turns out im shit at colouring, but eventually managed to get somewhere) as id probably not print it all in one color anyway and uncoloured looked overall bland and not really shippable. I also rendered it a couple times, rly love my result so far!
 
-![alt text](image-3.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/27-07-1.png?raw=true)
 
 (beautiful render)
 
@@ -436,17 +436,17 @@ I Also added holes everywhere they needed to be for wires of the motors, and ins
 
 Pic below shows the wire holes at the backside of the arm and the electronics (just the fly d5 and the orange pi here, i could maybe add the bigger stepper driver? but more than that would probably be overkill)
 
-![alt text](image-4.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/27-07-2.png?raw=true)
 
 One big thing youll also notice is that i changed the PSU sliding holders appearance, as i heavily underestimated the size of the outlet, and had to get rid of the super cool inset handle i had :/
 
-![alt text](image-5.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/27-07-3.png?raw=true)
 
 I started work on a insertable handle (maybe one handle on both sides so i can kinda slide it out with both hands and that would possibly look cool), but i think ill finish it tomorrow.
 
 Bearings inserted into the model at joints 2 and 3:
 
-![alt text](image-6.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/27-07-4.png?raw=true)
 
 i also fixed some small errors like the joint 3 hole not being big enough for the inner ring of the bearings and the gripper not being aligned with joint 3s rotation, which would probably make the whole thing a bit harder to control overall.
 
@@ -457,7 +457,7 @@ i also fixed some small errors like the joint 3 hole not being big enough for th
 
 ### New Grips!
 
-![](/image-7.png)
+![](https://github.com/ILikeMice/xenox/blob/main/photos/27-07-5.png?raw=true)
 
 
 Designed new handles, they should just slide in from the top and after that not slide out (i could just glue them), overall decently happy enough with the looks of it.
