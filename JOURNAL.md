@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~85.75h
+# Total Time Spent: ~86.75h
 
 # May 22nd
 
@@ -463,3 +463,25 @@ i also fixed some small errors like the joint 3 hole not being big enough for th
 Designed new handles, they should just slide in from the top and after that not slide out (i could just glue them), overall decently happy enough with the looks of it.
 
 **Time spent: ~15mins**
+
+## July 29th
+
+### Model shippable!!!
+
+Finally! Spent a bunch of time on making joints for EVERYTHING (every bolt and tiny detail is jointed), even added gear ratios so i can see how the gears would spin irl! This all allows me to pose the arm however i like (probably would be needed for shipping, gives me the ability to make cool poses for rendering and overall opportunity to go over the whole design again and review some stuff/find errorrs (which i actually did while doing this)). All joints now rotate like they would irl and the drawer and TB6600 stepper driver cover slide out!
+
+![alt text](image.png)
+![alt text](<xenox v76.png>)
+
+Reviewed what i needed for shipping overall, and added most of the electronics (didnt add some smaller ones that arent as relevant, for example the protoboard im gonna put my pressure sensors circuit on). 
+
+The submission requirements include all electronics, so added the FLY D5 board, orange pi, servo driver and ADC. Also added smaller bearings for joint 3 and limit switches!
+
+limit switches: as the TB6600 doesnt have sensorless homing sadly, i needed a limit switch for joint 2 which i added a simple holder for. Also realized i couldnt home joint 4, so i added a little pin that would hit another limit switch installed right next to the shaft.
+
+![alt text](image-1.png)
+
+(Pin currently not touching switch, as i chose a different model with a rolling ball on the tip that increases its range and lets the joint move in both directions)
+
+
+**Total time spent: ~5.5h**
