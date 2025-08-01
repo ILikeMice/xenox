@@ -5,7 +5,7 @@ description: "An AI Powered robotic arm assistant!"
 created_at: "2025-05-21"
 ---
 
-# Total Time Spent: ~86.75h
+# Total Time Spent: ~95.25h
 
 # May 22nd
 
@@ -470,8 +470,8 @@ Designed new handles, they should just slide in from the top and after that not 
 
 Finally! Spent a bunch of time on making joints for EVERYTHING (every bolt and tiny detail is jointed), even added gear ratios so i can see how the gears would spin irl! This all allows me to pose the arm however i like (probably would be needed for shipping, gives me the ability to make cool poses for rendering and overall opportunity to go over the whole design again and review some stuff/find errorrs (which i actually did while doing this)). All joints now rotate like they would irl and the drawer and TB6600 stepper driver cover slide out!
 
-![alt text](image.png)
-![alt text](<xenox v76.png>)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/29-07-1.png?raw=true)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/29-07-2.png?raw=true)
 
 Reviewed what i needed for shipping overall, and added most of the electronics (didnt add some smaller ones that arent as relevant, for example the protoboard im gonna put my pressure sensors circuit on). 
 
@@ -479,9 +479,42 @@ The submission requirements include all electronics, so added the FLY D5 board, 
 
 limit switches: as the TB6600 doesnt have sensorless homing sadly, i needed a limit switch for joint 2 which i added a simple holder for. Also realized i couldnt home joint 4, so i added a little pin that would hit another limit switch installed right next to the shaft.
 
-![alt text](image-1.png)
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/29-07-3.png?raw=true)
 
 (Pin currently not touching switch, as i chose a different model with a rolling ball on the tip that increases its range and lets the joint move in both directions)
 
 
 **Total time spent: ~5.5h**
+
+
+## July 30th/31st
+
+### Final stretch & software!
+
+Final day for submission!!
+
+Did some more review on my model, fixed some more sutff, added a limit switch for joint 1 and made a bunch of minor changes.
+
+Software: had to mess around for a while with the inverse kinematics library, couldnt understand the joint creation much but figured it out eventually after trying out a couple alternatives. Now i can set a pos and itll simulate movement to those coords and give me the angle for each joint  that will position the tooltip accordingly.
+
+Seperated the functionality in 3 sections, should be enough more or less as an outline, i have movement execution, movement planning and a simple speech to text script that ill integrate once i can get bluetooth input set up on the orange pi.
+
+CAD changes: Made joint 3 stepper insertable by cutting the joint part into 2 pieces (secured by some screws)
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/30-07-1.png?raw=true)
+
+Limit switch added for joint 0:
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/30-07-2.png?raw=true)
+
+About this joint potentially not holding:
+
+![alt text](https://github.com/ILikeMice/xenox/blob/main/photos/30-07-3.png?raw=true)
+
+it should kinda support itself as i reduced the offset between the wall thing so it shouldnt be able to bend too much anyway.
+
+Also fully updated the BOM with all items.
+
+
+**Total time spent: ~3h**
+
